@@ -1,108 +1,138 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# CoinVue - Project 3
 
-Welcome USER_NAME,
+CoinVue is a cryptocurrency portfolio tracker and price tracker updating price movements to give users fast, accurate and informative data on their assets performance. The project's goal is to deliver a portfolio service where users can keep track of their assets performance through buy, sell and transfer records with live updates on the value of their portfolio as well as a feature where users can share and compare their portfolios.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## 1.0 UX
 
-## Gitpod Reminders
+### 1.1 User goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#### 1.1.1 Target audience
 
-`python3 -m http.server`
+CoinVue’s target audience are crypto retail investors interested in live market movements and trends broken down into easy to read data that they need to make further investments. As well as a way to track the performance of their portfolio and others if they choose to share it.      
 
-A blue button should appear to click: _Make Public_,
+### 1.2 User needs and goals
 
-Another blue button should appear to click: _Open Browser_.
+#### 1.2.1 User needs:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+1. Accessibility for all users
+2. Accurate updated data
+3. Important data on assets
+4. Sign up and log in
+5. Password security 
+6. Private and public portfolios
+7. Share portfolio
+8. Add, sell, transfer and staking rewards records
+9. Portfolio charts
 
-A blue button should appear to click: _Make Public_,
+#### 1.2.2 How the user needs are met
 
-Another blue button should appear to click: _Open Browser_.
+1. All users should have equal opportunity through text transcript compatibility, color contrast that's readable, form labels, visual feedback and responsive breakpoints to support all devices
+2. Fast, accurate and close to instant updated data to ensure no big price action isn't missed or inaccurate through Coinmarketcap API
+3. More in depth breakdowns of individual assets when a user clicks on them such as supply, market cap, volume and price history
+4. Users can sign up and log in to access and edit their portfolios with password protection 
+5. To ensure account protection, users can create a password so other can log in
+6. Users with accounts can create public portfolios to share and view others as well as private portfolios
+7. Users can share their portfolios with others or view others to discover new assets, trends and investing strategies
+8. When adding records users can pick from 4 options as to add, sell, transfer and staking rewards to contribute to their portfolio
+9. When 1 record is added to a portfolio the chart will update regularly to its current value
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### 1.3 Devloper and buisness goals
 
-To log into the Heroku toolbelt CLI:
+#### 1.3.1 Goals of the buisness
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1. To deliver an accurate service with relevant data
+2. The website attracts retail investors
+3. User traffic can be maintained and grow through sign ups
+4. Users will interact and share portfolios to improve user engagement
+5. Growth in user numbers
+6. Growth on listed assets
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### 1.4 User stories
 
-------
+1. User wants to check recent performance of digital asset
+2. User wants to expand their knowledge on specific asset
+3. User wants to add / edit / remove a record to their portfolio
+4. User wants to sign up to create a portfolio
+5. User wants to share their portfolio 
+6. User wants to change their password
 
-## Release History
+1.4.1 The user has invested in an asset and is looking to see how it has performed for the day with either a positive or negative percentage value based on the past 24 hours. The price tracker will act as the home page/hub listing the top 50 assets so the user only has to scroll down to find their asset or use the search bar to filter them.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+1.4.2 The user wants to gain more knowledge and data on a project then what is offered on the home screen. The user can click on the asset they are interested in and will direct them to a new page dedicated to the selected asset with information on its market cap, supply, price, charts and more which the user can use to make their next investing decision.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+1.4.3 The user has created an account as well as a portfolio and has made a purchase which they are looking to make a record to track its future performance. On the portfolio screen the user can add / edit / delete records that have been created on their account and portfolio for each asset but cannot add / edit / delete other users' portfolios.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+1.4.4 The user is looking to create an account to share their strategies, which they can do through the sign up link in the nav where they can enter a username and password to protect their account. To access their account after its creation a login page with also be linked beneath the signup page for users with account.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+1.4.5 After creating an account and a portfolio the user may want to view or share their portfolio with others which they can do on their portfolio page with the option to make it private or public. Public portfolios will display on the portfolio page where users can interact with others' portfolios and learn about new projects or copy others strategies.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+1.4.6 The user has forgotten or wants to change to a more secure password, users can click the forgotten password link below the login page to change their password through an email authentication link then enter their new password.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## 2.0 Design choices
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### 2.1 Fonts
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### 2.2 Icons
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### 2.3 Colors
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### 2.4 Wireframes
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### 2.5 Mockups
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## 3.0 Features
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### 3.1 Exisiting features
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### 3.2 Features left to implement
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## 4.0 Technologies used
 
-------
+### 4.1 HTML5
 
-## FAQ about the uptime script
+### 4.2 CSS3
 
-**Why have you added this script?**
+### 4.3 Bootstrap 4.5
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### 4.4 JavaScript
 
-**How will this affect me?**
+### 4.5 jQuery
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### 4.6 Python 3
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### 4.7 Flask
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### 4.8 MongoDB
 
-**So….?**
+## 5.0 Testing
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## 6.0 Devlopment life cycle
 
-**Can I opt out?**
+### 6.1 Initial commit
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Additions:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Code Institute gitpod template
+- .gitignore file
 
-**Anything more?**
+### 6.2 Updated README
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Additions:
 
----
+- Updated README
 
-Happy coding!
+## 7.0 Deployment
+
+### 7.1 Local deployment
+
+### 7.2 GitHub page deployment
+
+### 7.3 Heroku deployment
+
+## 8.0 Credits
+
+### 8.1 Content
+
+### 8.2 Code
