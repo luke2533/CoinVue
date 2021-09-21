@@ -123,6 +123,23 @@ Additions:
 
 - Updated README
 
+### 6.3 Adding basic files
+
+Additions:
+
+- Added static file
+- Added css and style.css
+- Added js and script.js
+- Added templates and base.html
+- Added app.py
+
+### 6.4 Testing for responsive app.py file
+
+Additions:
+
+- Testing app.py is responsive
+- Added mongoDB connectivity
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment
