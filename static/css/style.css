@@ -1,3 +1,39 @@
 body{
-    background-color: red;
+    background-color: #D1E8E2;
+}
+
+.nav-bar{
+    background-color: #2C3531;
+    height: 125px;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.nav-title{
+    text-align: center;
+    color: #FFAC5E;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 2em;
+}
+
+.nav-item{
+    font-size: 1.5em;
+}
+
+.nav-link{
+    background-color: #26302b;
+    box-shadow: 1px 1px 1px black;
+    color: #FFAC5E;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-bar{
+    justify-content: flex-end;
 }

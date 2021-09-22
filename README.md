@@ -94,7 +94,7 @@ CoinVue’s target audience are crypto retail investors interested in live marke
 
 ### 4.2 CSS3
 
-### 4.3 Materlize
+### 4.3 Bootstrap 4.5
 
 ### 4.4 JavaScript
 
@@ -152,16 +152,22 @@ Additions:
 
 - Procfile
 
-### 6.7 Basic template structure, responsive CSS, materlize and jQuery
+### 6.7 Basic template structure, responsive CSS, bootstrap and jQuery
 
 Additions:
 
 - Updated README
 - Added index.html
 - CSS responsive
-- Added matertlize
+- Added bootstrap 
 - Added jQuery 
 - Basic template structure
+
+### 6.8 Basic nav bar
+
+Additions:
+
+- Basic nav bar
 
 ## 7.0 Deployment
 
