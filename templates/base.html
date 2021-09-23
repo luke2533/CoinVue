@@ -15,43 +15,76 @@
     <title>CoinVue</title>
 </head>
 <body>
+    <header>
+        <div class="container-fluid">
+            <div class="row nav-bar">
+                <div class="col-md-4">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="{{ url_for('coin_vue') }}"><img src="https://thumbs.dreamstime.com/b/blockchain-technology-icon-vector-block-chain-symbol-blockchain-technology-modern-icon-vector-block-chain-symbol-logo-element-106099068.jpg"
+                                alt="CoinVue logo" class="logo"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url_for('coin_vue') }}"><h1 class="nav-title">CoinVue</h1></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav nav-bar">
+                        <li class="nav-item">
+                            <a href="{{ url_for('coin_vue') }}" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url_for('portfolio') }}" class="nav-link">My Portfolio's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Discover Portfolio's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Log in</a>
+                        </li>
+                        <!-- Add sign out here later but make inviisble if user is signed in -->
 
-    <div class="container-fluid">
-        <div class="row nav-bar">
-            <div class="col-md-4">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="index.html"><img src="https://thumbs.dreamstime.com/b/blockchain-technology-icon-vector-block-chain-symbol-blockchain-technology-modern-icon-vector-block-chain-symbol-logo-element-106099068.jpg"
-                            alt="CoinVue logo" class="logo"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html"><h1 class="nav-title">CoinVue</h1></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <ul class="nav nav-bar">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">My Portfolio's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Discover Portfolio's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Log in</a>
-                    </li>
-
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
+    </header>
 
     {% block content %}
     {% endblock %}
+
+    <footer>
+
+        <div class="containter-fluid">
+            <div class="row footer justify-content-center">
+                <div class="col-md-3">
+                    <h2 class="footer-title">Social media</h2>
+                    <br>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square footer-icon"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube footer-icon"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter footer-icon"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram footer-icon"></i></a>
+                    
+                </div>
+
+                <div class="col-md-3">
+                    <h2 class="footer-title">Navigation</h2>
+                    <br>
+                    <a href="index.html"><i class="fas fa-home footer-icon"></i></a>
+                    <a href=""><i class="fas fa-university footer-icon"></i></a>
+                    <a href=""><i class="fas fa-coins footer-icon"></i></a>
+                    <a href=""><i class="fas fa-user footer-icon"></i></a>
+            
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    {% block footer %}
+    {% endblock %}
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

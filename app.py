@@ -17,9 +17,14 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 @app.route("/")
+
 @app.route("/coin_vue")
 def coin_vue():
     return render_template("index.html")
+
+@app.route("/portfolio")
+def portfolio():
+    return render_template("portfolio.html")
 
 
 if __name__ == "__main__":

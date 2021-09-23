@@ -163,11 +163,14 @@ Additions:
 - Added jQuery 
 - Basic template structure
 
-### 6.8 Basic nav bar
+### 6.8 Basic structure for home, portfolio, navbar and footer
 
 Additions:
 
 - Basic nav bar
+- Basic footer
+- Added basic home page layout
+- Added basic portfolio page layout
 
 ## 7.0 Deployment
 

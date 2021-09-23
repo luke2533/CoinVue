@@ -37,3 +37,20 @@ body{
 .nav-bar{
     justify-content: flex-end;
 }
+
+.footer{
+    background-color: #2C3531;
+    height: 125px;
+    height: 200px;
+    padding-top: 25px;
+}
+
+.footer-title{
+    font-size: 2.3em;
+    color: #FFAC5E;
+}
+
+.footer-icon{
+    font-size: 3em;
+    margin: 5px;
+}
