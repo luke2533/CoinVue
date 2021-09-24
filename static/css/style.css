@@ -1,6 +1,12 @@
+/* Universal */
+
 body{
     background-color: #D1E8E2;
 }
+
+/* Universal */
+
+/* Nav-bar */
 
 .nav-bar{
     background-color: #2C3531;
@@ -38,6 +44,33 @@ body{
     justify-content: flex-end;
 }
 
+/* Nav-bar */
+
+/* My Portfolio */
+
+.my-portfolio{
+    border: solid 1px black;
+}
+
+/* My Portfolio */
+
+/* Account log in page */
+
+.user-box{
+    border: solid black 1px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.user{
+    margin: 5px;
+}
+
+/* Account log in page */
+
+/* Footer */
+
 .footer{
     background-color: #2C3531;
     height: 125px;
@@ -54,3 +87,5 @@ body{
     font-size: 3em;
     margin: 5px;
 }
+
+/* Footer */

@@ -4,31 +4,121 @@
 <h1>HGello</h1>
 
 <!-- Porfolio overview -->
+{% block portfolio %}
 
-<div class="container-fluid">
-    <div class="row my-portfolio justify-content-center">
-        <div class="col-4">
-            <p>Portfolio #1</p>
-            <!-- PLACEHOLDER   Will change to dropdown menu -->
-            <h2>$7318.09</h2>
-            <!-- PLACEHOLDER   Portfolio value -->
-            <h4>- $129.10  24h</h4>
-            <!-- PLACEHOLDER   Portfolio daily change in value -->
+    <div class="container-fluid">
+        <div class="row my-portfolio justify-content-center">
+            <div class="col-4">
+                <p>Portfolio #1</p>
+                <!-- PLACEHOLDER   Will change to dropdown menu -->
+                <h2>$7318.09</h2>
+                <!-- PLACEHOLDER   Portfolio value -->
+                <h4>- $129.10  24h</h4>
+                <!-- PLACEHOLDER   Portfolio daily change in value -->
+            </div>
+
+            <div class="col-4">
+                <button>Edit Porfolio</button>
+                <button>+ Add New</button>
+                <h3>24H | 7D | 30D | 90D | ALL</h3>
+                <!-- PLACEHOLDER   Will change to button crossbar -->
+            </div>
         </div>
 
-        <div class="col-4">
-            <button>Edit Porfolio</button>
-            <button>+ Add New</button>
-            <h3>24H | 7D | 30D | 90D | ALL</h3>
-            <!-- PLACEHOLDER   Will change to button crossbar -->
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1585087896250-R3GZ6OFWYQRZUJRCJU3D/produce_monthly.png"
+                alt="Chart placeholder" height="500px" width="1400px"> 
+                <!-- PLACEHOLDER   Chart placeholder -->
+            </div>
         </div>
     </div>
 
+{% endblock %}
+
+<!-- Portfolio table -->
+
+<div class="containter-fluid">
     <div class="row justify-content-center">
-        <div class="col-8">
-            <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1585087896250-R3GZ6OFWYQRZUJRCJU3D/produce_monthly.png"
-            alt="Chart placeholder" height="500px" width="1400px"> 
-            <!-- PLACEHOLDER   Chart placeholder -->
+        <div class="col-11">
+            <h2>Your Assets (Private):</h2>
+            <button>Share Portfolio</button>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">24h %</th>
+                    <th scope="col">Holdings</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Profit / Loss</th>
+                    <th scope="col">Edit</th>
+                </tr>
+                </thead>
+                <!-- Should sort from value accending -->
+                <tbody>
+                <tr>
+                    <th scope="row">Bitcoin BTC</th>
+                    <td>$40511.32</td>
+                    <td>-1.69%</td>
+                    <td>0.01252</td>
+                    <td>$487.30</td>
+                    <td>-$63.29</td>
+                    <td>+ :</td>
+                    <!-- (Placeholder) -->
+                </tr>
+                <tr>
+                    <th scope="row">Ethereum ETH</th>
+                    <td>$2938.10</td>
+                    <td>-5.46%</td>
+                    <td>0.03852</td>
+                    <td>$113.09</td>
+                    <td>-$21.19</td>
+                    <td>+ :</td>
+                    <!-- (Placeholder) -->
+                </tr>
+                <tr>
+                    <th scope="row">Cardano ADA</th>
+                    <td>$2.02</td>
+                    <td>-3.88%</td>
+                    <td>1000</td>
+                    <td>$2020.00</td>
+                    <td>+$969.11</td>
+                    <td>+ :</td>
+                    <!-- (Placeholder) -->
+                </tr>
+                <tr>
+                    <th scope="row">XRP XRP</th>
+                    <td>$0.9122</td>
+                    <td>-3.67%</td>
+                    <td>111.1</td>
+                    <td>$101.40</td>
+                    <td>+$41.54</td>
+                    <td>+ :</td>
+                    <!-- (Placeholder) -->
+                </tr>
+                <tr>
+                    <th scope="row">Polkadot DOT</th>
+                    <td>$28.90</td>
+                    <td>-3.64%</td>
+                    <td>55</td>
+                    <td>$1596.11</td>
+                    <td>+$662.77</td>
+                    <td>+ :</td>
+                    <!-- (Placeholder) -->
+                </tr>
+                <tr>
+                    <th scope="row">Dogecoin DOGE</th>
+                    <td>$0.2069</td>
+                    <td>-0.12%</td>
+                    <td>1250</td>
+                    <td>$263.15</td>
+                    <td>+$13.15</td>
+                    <td>+ :</td>
+                    <!-- (Placeholder) -->
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

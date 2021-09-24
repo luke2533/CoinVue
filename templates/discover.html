@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Add a  block for the users portfolio for beginning %} -->
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-4 my-portfolio">
+            <p>Portfolio #1</p>
+            <!-- PLACEHOLDER   Will change to dropdown menu -->
+            <h2>$7318.09</h2>
+            <!-- PLACEHOLDER   Portfolio value -->
+            <h4>- $129.10  24h</h4>
+            <!-- PLACEHOLDER   Portfolio daily change in value -->
+        </div>
+
+        <div class="col-4 my-portfolio">
+            <button>Edit Porfolio</button>
+            <button>+ Add New</button>
+            <h3>24H | 7D | 30D | 90D | ALL</h3>
+            <!-- PLACEHOLDER   Will change to button crossbar -->
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1585087896250-R3GZ6OFWYQRZUJRCJU3D/produce_monthly.png"
+            alt="Chart placeholder" height="500px" width="1275px"> 
+            <!-- PLACEHOLDER   Chart placeholder -->
+        </div>
+    </div>
+</div>
+
+<!-- The first portfolio will be the shared user's portfolios -->
+
+<!-- This other portfolios by other users can only be viewed -->
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-4 my-portfolio">
+            <p>Portfolio #2</p>
+            <!-- PLACEHOLDER   Will change to dropdown menu -->
+            <h2>$93618.09</h2>
+            <!-- PLACEHOLDER   Portfolio value -->
+            <h4>- $329.10  24h</h4>
+            <!-- PLACEHOLDER   Portfolio daily change in value -->
+        </div>
+
+        <div class="col-4 my-portfolio">
+            <button>View Porfolio #2</button>
+            <h3>24H | 7D | 30D | 90D | ALL</h3>
+            <!-- PLACEHOLDER   Will change to button crossbar -->
+        </div>
+    </div>
+</div>
+
+
+<button>+ Add Your Portfolio</button>
+
+
+
+{% endblock %}

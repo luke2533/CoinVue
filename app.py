@@ -26,6 +26,14 @@ def coin_vue():
 def portfolio():
     return render_template("portfolio.html")
 
+@app.route("/discover")
+def discover():
+    return render_template("discover.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

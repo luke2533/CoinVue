@@ -172,6 +172,14 @@ Additions:
 - Added basic home page layout
 - Added basic portfolio page layout
 
+### 6.9 Basic structure to discover and log in page
+
+Additions:
+
+- Basic structure for discover page
+- Basic structure for log in page
+
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment
