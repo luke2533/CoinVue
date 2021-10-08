@@ -179,6 +179,12 @@ Additions:
 - Basic structure for discover page
 - Basic structure for log in page
 
+### 6.10 Basic structure for asset and sign up page
+
+Additions:
+
+- Basic structure for asset page
+- Basic structure for sign up page
 
 ## 7.0 Deployment
 
