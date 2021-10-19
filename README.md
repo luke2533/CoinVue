@@ -186,6 +186,14 @@ Additions:
 - Basic structure for asset page
 - Basic structure for sign up page
 
+### 6.11 Password and username authentication
+
+Additions:
+
+- Backend mongoDB new database
+- Password authentication 
+- Username authentication 
+
 ## 7.0 Deployment
 
 ### 7.1 Local deployment

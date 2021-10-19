@@ -1,3 +1,4 @@
+astroid==2.8.3
 certifi==2021.5.30
 charset-normalizer==2.0.6
 click==8.0.1
@@ -6,10 +7,18 @@ dnspython==2.1.0
 Flask==2.0.1
 Flask-PyMongo==2.3.0
 idna==3.2
+isort==5.9.3
 itsdangerous==2.0.1
 Jinja2==3.0.1
+lazy-object-proxy==1.6.0
 MarkupSafe==2.0.1
+mccabe==0.6.1
+platformdirs==2.4.0
+pylint==2.11.1
 pymongo==3.12.0
 requests==2.26.0
+toml==0.10.2
+typing-extensions==3.10.0.2
 urllib3==1.26.6
 Werkzeug==2.0.1
+wrapt==1.13.2
